@@ -26,3 +26,6 @@ class Movie(models.Model):
     year_of_prodcution = models.DateField()
     views_count = models.IntegerField(default=0)
     
+
+    def __str__(self):
+        return self.title
